@@ -1,72 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="ssF.hh0DQ^C=Y[uwt*5C">Player</variable><variable type="KIND_SpriteKind" id="${e0C?Kh,N7yQ$vVASTJ">Projectile</variable><variable type="KIND_SpriteKind" id="w.2CE-/%v.O61)EdF50:">Food</variable><variable type="KIND_SpriteKind" id="1GpV-Tr(l,{wo#|g?3zb">Enemy</variable><variable type="ActionKind" id="?l%H,wQ,NuY2D_wVYBL,">0Walking</variable><variable type="ActionKind" id="?po##^xnx]=ed/{Y~IZ[">1Idle</variable><variable type="ActionKind" id="vM3sy5#^:[{t1MK].O^8">2Jumping</variable><variable id="~:=M`B3ATdHR_F?qg0sI">mySprite</variable><variable id=".s)DC2r1^DiJR_KlCZ6{">going</variable></variables><block type="keyonevent" id="U,tWq1tjVHhlA!6,qxF}" x="490" y="10"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id=";={0W2{$-r;jtj9k-J1T"><value name="sprite"><block type="variables_get" id="%K}aiP,:?L*WunLw$S*n"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id=",xrK(KTlj9zgNTeLgxvA"><field name="frames">[img`
-. . . . f f f f f f . . . . . . 
-. . . f 2 f e e e e f f . . . . 
-. . f 2 2 2 f e e e e f f . . . 
-. . f e e e e f f e e e f . . . 
-. f e 2 2 2 2 e e f f f f . . . 
-. f 2 e f f f f 2 2 2 e f . . . 
-. f f f e e e f f f f f f f . . 
-. f e e 4 4 f b e 4 4 e f f . . 
-. . f e d d f 1 4 d 4 e e f . . 
-. . . f d d d d 4 e e e f . . . 
-. . . f e 4 4 4 e e f f . . . . 
-. . . f 2 2 2 e d d 4 . . . . . 
-. . . f 2 2 2 e d d e . . . . . 
-. . . f 5 5 4 f e e f . . . . . 
-. . . . f f f f f f . . . . . . 
-. . . . . . f f f . . . . . . . 
-`,img`
-. . . . . . . . . . . . . . . . 
-. . . . f f f f f f . . . . . . 
-. . . f 2 f e e e e f f . . . . 
-. . f 2 2 2 f e e e e f f . . . 
-. . f e e e e f f e e e f . . . 
-. f e 2 2 2 2 e e f f f f . . . 
-. f 2 e f f f f 2 2 2 e f . . . 
-. f f f e e e f f f f f f f . . 
-. f e e 4 4 f b e 4 4 e f f . . 
-. . f e d d f 1 4 d 4 e e f . . 
-. . . f d d d e e e e e f . . . 
-. . . f e 4 e d d 4 f . . . . . 
-. . . f 2 2 e d d e f . . . . . 
-. . f f 5 5 f e e f f f . . . . 
-. . f f f f f f f f f f . . . . 
-. . . f f f . . . f f . . . . . 
-`,img`
-. . . . f f f f f f . . . . . . 
-. . . f 2 f e e e e f f . . . . 
-. . f 2 2 2 f e e e e f f . . . 
-. . f e e e e f f e e e f . . . 
-. f e 2 2 2 2 e e f f f f . . . 
-. f 2 e f f f f 2 2 2 e f . . . 
-. f f f e e e f f f f f f f . . 
-. f e e 4 4 f b e 4 4 e f f . . 
-. . f e d d f 1 4 d 4 e e f . . 
-. . . f d d d d 4 e e e f . . . 
-. . . f e 4 4 4 e e f f . . . . 
-. . . f 2 2 2 e d d 4 . . . . . 
-. . . f 2 2 2 e d d e . . . . . 
-. . . f 5 5 4 f e e f . . . . . 
-. . . . f f f f f f . . . . . . 
-. . . . . . f f f . . . . . . . 
-`,img`
-. . . . . . . . . . . . . . . . 
-. . . . f f f f f f . . . . . . 
-. . . f 2 f e e e e f f . . . . 
-. . f 2 2 2 f e e e e f f . . . 
-. . f e e e e f f e e e f . . . 
-. f e 2 2 2 2 e e f f f f . . . 
-. f 2 e f f f f 2 2 2 e f . . . 
-. f f f e e e f f f f f f f . . 
-. f e e 4 4 f b e 4 4 e f f . . 
-. . f e d d f 1 4 d 4 e e f . . 
-. . . f d d d d 4 e e e f . . . 
-. . . f e 4 4 4 e d d 4 . . . . 
-. . . f 2 2 2 2 e d d e . . . . 
-. . f f 5 5 4 4 f e e f . . . . 
-. . f f f f f f f f f f . . . . 
-. . . f f f . . . f f . . . . . 
-`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="sy]0cziR5oEkT|rw5fNn"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="0LY4|h]P9`.-`wS_.o,a"><field name="on">false</field></shadow></value></block></statement></block><block type="pxt-on-start" id="oc24vK5gV}WD%`[q|%,a" x="69" y="39"><statement name="HANDLER"><block type="tilemap_editor" id="?leid0@g8Tnk4uEH@)]0"><field name="tilemap">tiles.createTilemap(hex`3200320002020102020201020202020201020202020202020202020102020202020202000000000000000000000000000000000000000203060608020202020202020202020102020202020203060608010202020200000000000000000000000000000000000000010504040a02010201020201020602020202020102020504040a020201020200000000000000000000000000000000000000020504040408020202020202030408020102020202030404040a020202020200000000000000000000000000000000000000020709040404080202020203040404080202020203040404090b02010202020000000000000000000000000000000000000001020207040404060606060404090404060606060404040b02020202020202000000000000000000000000000000000000000202020207040404040404040b0207040404040404040b02010202020202020000000000000000000000000000000000000002010201020709090909090b0202020709090909090b02020202020202020200000000000000000000000000000000000000020202020202010202010202020202020102020202020102020202010202020000000000000000000000000000000000000001020202020202020202020202020202020202020102020202020202020202000000000000000000000000000000000000000202020102020202020202010202020202020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="ssF.hh0DQ^C=Y[uwt*5C">Player</variable><variable type="KIND_SpriteKind" id="${e0C?Kh,N7yQ$vVASTJ">Projectile</variable><variable type="KIND_SpriteKind" id="w.2CE-/%v.O61)EdF50:">Food</variable><variable type="KIND_SpriteKind" id="1GpV-Tr(l,{wo#|g?3zb">Enemy</variable><variable type="ActionKind" id="?l%H,wQ,NuY2D_wVYBL,">0Walking</variable><variable type="ActionKind" id="?po##^xnx]=ed/{Y~IZ[">1Idle</variable><variable type="ActionKind" id="vM3sy5#^:[{t1MK].O^8">2Jumping</variable><variable id="~:=M`B3ATdHR_F?qg0sI">mySprite</variable><variable id=".s)DC2r1^DiJR_KlCZ6{">going</variable></variables><block type="pxt-on-start" id="oc24vK5gV}WD%`[q|%,a" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor" id="?leid0@g8Tnk4uEH@)]0"><field name="tilemap">tiles.createTilemap(hex`3200320002020102020201020202020201020202020202020202020102020202020202000000000000000000000000000000000000000203060608020202020202020202020102020202020203060608010202020200000000000000000000000000000000000000010504040a02010201020201020602020202020102020504040a020201020200000000000000000000000000000000000000020504040408020202020202030408020102020202030404040a020202020200000000000000000000000000000000000000020709040404080202020203040404080202020203040404090b02010202020000000000000000000000000000000000000001020207040404060606060404090404060606060404040b02020202020202000000000000000000000000000000000000000202020207040404040404040b0207040404040404040b02010202020202020000000000000000000000000000000000000002010201020709090909090b0202020709090909090b02020202020202020200000000000000000000000000000000000000020202020202010202010202020202020102020202020102020202010202020000000000000000000000000000000000000001020202020202020202020202020202020202020102020202020202020202000000000000000000000000000000000000000202020102020202020202010202020202020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
 ..................................................
 ..................................................
 ..................................................
@@ -134,7 +66,75 @@
 . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="Uu#5qigJ_T):$4)X[_s7"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="/A%q~C^UWD.FurO+-74M"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="2xf/eS--ygw{G6l!AGTa"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><next><block type="camerafollow" id="6s)rSXJIchB:pID+]4~l"><value name="sprite"><block type="variables_get" id="0B?`VK-Sl%BjBq^GD]OG"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="`Yt89c9T#z31V6-LzlZX" x="528" y="347"><field name="button">controller.up</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="YU,8tWD0)(lIq-BSyL3X"><value name="sprite"><block type="variables_get" id="IlrXP`2$f*XX:)n8ff36"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="f+I$!TgbgnK9!lwqp-o8"><field name="frames">[img`
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="Uu#5qigJ_T):$4)X[_s7"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="/A%q~C^UWD.FurO+-74M"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="2xf/eS--ygw{G6l!AGTa"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><next><block type="camerafollow" id="6s)rSXJIchB:pID+]4~l"><value name="sprite"><block type="variables_get" id="0B?`VK-Sl%BjBq^GD]OG"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="U,tWq1tjVHhlA!6,qxF}" x="630" y="10"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id=";={0W2{$-r;jtj9k-J1T"><value name="sprite"><block type="variables_get" id="%K}aiP,:?L*WunLw$S*n"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id=",xrK(KTlj9zgNTeLgxvA"><field name="frames">[img`
+. . . . f f f f f f . . . . . . 
+. . . f 2 f e e e e f f . . . . 
+. . f 2 2 2 f e e e e f f . . . 
+. . f e e e e f f e e e f . . . 
+. f e 2 2 2 2 e e f f f f . . . 
+. f 2 e f f f f 2 2 2 e f . . . 
+. f f f e e e f f f f f f f . . 
+. f e e 4 4 f b e 4 4 e f f . . 
+. . f e d d f 1 4 d 4 e e f . . 
+. . . f d d d d 4 e e e f . . . 
+. . . f e 4 4 4 e e f f . . . . 
+. . . f 2 2 2 e d d 4 . . . . . 
+. . . f 2 2 2 e d d e . . . . . 
+. . . f 5 5 4 f e e f . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . . . f f f . . . . . . . 
+`,img`
+. . . . . . . . . . . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . f 2 f e e e e f f . . . . 
+. . f 2 2 2 f e e e e f f . . . 
+. . f e e e e f f e e e f . . . 
+. f e 2 2 2 2 e e f f f f . . . 
+. f 2 e f f f f 2 2 2 e f . . . 
+. f f f e e e f f f f f f f . . 
+. f e e 4 4 f b e 4 4 e f f . . 
+. . f e d d f 1 4 d 4 e e f . . 
+. . . f d d d e e e e e f . . . 
+. . . f e 4 e d d 4 f . . . . . 
+. . . f 2 2 e d d e f . . . . . 
+. . f f 5 5 f e e f f f . . . . 
+. . f f f f f f f f f f . . . . 
+. . . f f f . . . f f . . . . . 
+`,img`
+. . . . f f f f f f . . . . . . 
+. . . f 2 f e e e e f f . . . . 
+. . f 2 2 2 f e e e e f f . . . 
+. . f e e e e f f e e e f . . . 
+. f e 2 2 2 2 e e f f f f . . . 
+. f 2 e f f f f 2 2 2 e f . . . 
+. f f f e e e f f f f f f f . . 
+. f e e 4 4 f b e 4 4 e f f . . 
+. . f e d d f 1 4 d 4 e e f . . 
+. . . f d d d d 4 e e e f . . . 
+. . . f e 4 4 4 e e f f . . . . 
+. . . f 2 2 2 e d d 4 . . . . . 
+. . . f 2 2 2 e d d e . . . . . 
+. . . f 5 5 4 f e e f . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . . . f f f . . . . . . . 
+`,img`
+. . . . . . . . . . . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . f 2 f e e e e f f . . . . 
+. . f 2 2 2 f e e e e f f . . . 
+. . f e e e e f f e e e f . . . 
+. f e 2 2 2 2 e e f f f f . . . 
+. f 2 e f f f f 2 2 2 e f . . . 
+. f f f e e e f f f f f f f . . 
+. f e e 4 4 f b e 4 4 e f f . . 
+. . f e d d f 1 4 d 4 e e f . . 
+. . . f d d d d 4 e e e f . . . 
+. . . f e 4 4 4 e d d 4 . . . . 
+. . . f 2 2 2 2 e d d e . . . . 
+. . f f 5 5 4 4 f e e f . . . . 
+. . f f f f f f f f f f . . . . 
+. . . f f f . . . f f . . . . . 
+`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="sy]0cziR5oEkT|rw5fNn"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="0LY4|h]P9`.-`wS_.o,a"><field name="on">false</field></shadow></value></block></statement></block><block type="keyonevent" id="`Yt89c9T#z31V6-LzlZX" x="668" y="347"><field name="button">controller.up</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="YU,8tWD0)(lIq-BSyL3X"><value name="sprite"><block type="variables_get" id="IlrXP`2$f*XX:)n8ff36"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="f+I$!TgbgnK9!lwqp-o8"><field name="frames">[img`
 . . . . . . f f f f . . . . . . 
 . . . . f f e e e e f f . . . . 
 . . . f e e e f f e e e f . . . 
@@ -202,7 +202,7 @@
 . . 4 d d e 2 2 2 2 2 f 4 . . . 
 . . . 4 e e f f f f f f e . . . 
 . . . . . . . . . f f f . . . . 
-`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="6ddVN$k|HmnPqH-`a2)a"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="Yt3TL8@ZQ`g|?q@=Z2Z9"><field name="on">false</field></shadow></value></block></statement></block><block type="keyonevent" id="vhY$3X^FLQcX]3UNZtDL" x="47" y="380"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="jCw@KhbNM.4fFKAhHq]e"><value name="sprite"><block type="variables_get" id="Cfl}78e}?@hDKg5AOES;"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="rJ,NEa0H+t:/u|aG$B;C"><field name="frames">[img`
+`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="6ddVN$k|HmnPqH-`a2)a"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="Yt3TL8@ZQ`g|?q@=Z2Z9"><field name="on">false</field></shadow></value></block></statement></block><block type="keyonevent" id="vhY$3X^FLQcX]3UNZtDL" x="187" y="380"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="jCw@KhbNM.4fFKAhHq]e"><value name="sprite"><block type="variables_get" id="Cfl}78e}?@hDKg5AOES;"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="rJ,NEa0H+t:/u|aG$B;C"><field name="frames">[img`
 . . . . . . . . . . . . . . . . 
 . . . . . . f f f f f f . . . . 
 . . . . f f e e e e f 2 f . . . 
@@ -270,7 +270,7 @@
 . . . . . f e e f 4 5 5 f . . . 
 . . . . . . f f f f f f . . . . 
 . . . . . . . f f f . . . . . . 
-`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="jG2/H,eZ:pItJ5oln|,."><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="iRo%+9hoC$?nL*E]TT]n"><field name="on">false</field></shadow></value></block></statement></block><block type="keyonevent" id="KJ:PGZjL0}9UMO89qRBt" x="430" y="670"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="8B]Uc*7.L.VtU:J_|T:s"><value name="sprite"><block type="variables_get" id=")$)kBK%~fis8:,7%SAow"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="RYD(y3BRf9u3nCRy.BF?"><field name="frames">[img`
+`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="jG2/H,eZ:pItJ5oln|,."><field name="ms">200</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="iRo%+9hoC$?nL*E]TT]n"><field name="on">false</field></shadow></value></block></statement></block><block type="keyonevent" id="KJ:PGZjL0}9UMO89qRBt" x="570" y="670"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="run_image_animation" id="8B]Uc*7.L.VtU:J_|T:s"><value name="sprite"><block type="variables_get" id=")$)kBK%~fis8:,7%SAow"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="RYD(y3BRf9u3nCRy.BF?"><field name="frames">[img`
 . . . . . . f f f f . . . . . . 
 . . . . f f f 2 2 f f f . . . . 
 . . . f f f 2 2 2 2 f f f . . . 
@@ -338,4 +338,4 @@
 . . . . e e f 5 5 4 4 f . . . . 
 . . . . . f f f f f f f . . . . 
 . . . . . . . . . f f f . . . . 
-`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="r;Cb`VOSj_*9u5L!ENE1"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="GfHWRBM(_Gpk$vwx[Wct"><field name="on">false</field></shadow></value></block></statement></block><block type="gameupdate" id="Egp~:_1#XucM=9s4Kd!]" x="-70" y="950"><statement name="HANDLER"><block type="variables_set" id="@:Own)Qi6+Riscm6uH~D"><field name="VAR" id=".s)DC2r1^DiJR_KlCZ6{">going</field><value name="VALUE"><shadow type="math_number" id="f=N)w]-9Hs49Rp[nVq96"><field name="NUM">0</field></shadow><block type="logic_operation" id="KrbNahhxYsWE@hjWO0CU"><field name="OP">OR</field><value name="A"><block type="logic_operation" id="36d~`9u(GWB}S|JLJK{H"><field name="OP">OR</field><value name="A"><block type="keyispressed" id="9U2{{TiDatzdqK0)gBw!"><field name="button">controller.left</field></block></value><value name="B"><block type="keyispressed" id="a-NYrAl$;aWs=FzZ~-,A"><field name="button">controller.up</field></block></value></block></value><value name="B"><block type="logic_operation" id="kLKA`mR%!-KbsyP/J}OJ"><field name="OP">OR</field><value name="A"><block type="keyispressed" id="+HLH9oJ~yh$l@R7C?P-b"><field name="button">controller.down</field></block></value><value name="B"><block type="keyispressed" id="3z95m=j?W^z^g04tkhiC"><field name="button">controller.right</field></block></value></block></value></block></value><next><block type="controls_if" id="s{C=vba^x@Nzt%#yedYI"><value name="IF0"><shadow type="logic_boolean" id="mU_7f5O90Z%I,q^-.[:t"><field name="BOOL">TRUE</field></shadow><block type="logic_negate" id="=A;%Jr-k|+1-ss?v[qer"><value name="BOOL"><block type="variables_get" id="CEzC+UStbIB--87;Ym#."><field name="VAR" id=".s)DC2r1^DiJR_KlCZ6{">going</field></block></value></block></value><statement name="DO0"><block type="stop_animations" id="GymIC2xKEbIh/w,OL9j:"><field name="type">animation.AnimationTypes.All</field><value name="sprite"><block type="variables_get" id="~6Iil4V-$xZ1w/HQ$9T-"><field name="VAR" id="~:=M`B3ATdHR_F?qg0sI">mySprite</field></block></value></block></statement></block></next></block></statement></block></xml>
+`]</field></block></value><value name="frameInterval"><shadow type="timePicker" id="r;Cb`VOSj_*9u5L!ENE1"><field name="ms">100</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="GfHWRBM(_Gpk$vwx[Wct"><field name="on">false</field></shadow></value></block></statement></block></xml>
